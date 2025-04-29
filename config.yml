@@ -1,4 +1,4 @@
-baseURL: https://chasewang-cw.github.io/wwc.github.io/
+baseURL: "https://chasewang-cw.github.io/wwc.github.io/"
 pagination.pagerSize: 6    # 首页每页显示的文章数
 theme: PaperMod # 主题名称，和themes文件夹下的一致
 
@@ -194,10 +194,7 @@ languages:
             url: posts
           - name: 归档
             url: archives
-          - name: 友链
-            url: friends
-          - name: 喝咖啡
-            url: donate
+
       # 社交平台小图标，参考：https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
       socialIcons:
         - name: github
@@ -210,42 +207,7 @@ languages:
           url: "https://space.bilibili.com/14020906"
         - name: x
           url: "https://x.com"
-    # 菜单顺序（中文）
-    # 搜索，文章，分类，归档，标签，关于，友情链接，RSS
-    menu:
-      main:
-        - identifier: search
-          name: 搜索
-          url: /search/
-          weight: 1
-        - identifier: posts
-          name: 文章
-          url: /posts/
-          weight: 2
-        - identifier: categories
-          name: 分类
-          url: /categories/
-          weight: 3
-        - identifier: archives
-          name: 归档
-          url: /archives/
-          weight: 4
-        - identifier: tags
-          name: 标签
-          url: /tags/
-          weight: 5
-        - identifier: about
-          name: 关于
-          url: /about/
-          weight: 6
-        - identifier: friends
-          name: 友情链接
-          url: /friends/
-          weight: 7
-        - identifier: rss
-          name: RSS
-          url: index.xml
-          weight: 8
+  
         
 
 # ----- [Begin]. 搜索配置 -----
