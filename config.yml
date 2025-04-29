@@ -1,4 +1,4 @@
-baseURL: "https://chasewang-cw.github.io/wwc.github.io/"
+baseURL: "http://chasewang.top/"
 pagination.pagerSize: 6    # 首页每页显示的文章数
 theme: PaperMod # 主题名称，和themes文件夹下的一致
 
