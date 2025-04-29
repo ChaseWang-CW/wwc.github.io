@@ -1,0 +1,53 @@
+<!-- 找到当前文章所有标签相同的其他文章，但不包括当前文章自身，然后取前 5 篇这样的相关文章，赋值给变量 $related -->
+{{ $related := first 5 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+<!-- 检查是否有相关文章存在。如果有，再执行下面的代码 -->
+{{ with $related }}
+    <h3 class="see-also">{{- i18n "related" -}}</h3>
+  <div class="related">
+    <ul>
+      {{ range . }}
+        <li>
+          <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a> <span class="related-date">（{{ .Date | time.Format "2006-01-02" }}）</span>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
+
+<style>
+.post-footer h3 {
+  margin: 1.2em 0 1.2em;
+}
+
+.post-footer .related {
+  padding-bottom: 1.5rem;
+}
+
+.post-footer .related ul  {
+    padding-inline-start: 20px;
+}
+
+.post-footer .related ul li{
+    list-style-type: square;
+    margin-bottom: 0.5rem;
+}
+
+.post-footer .related ul li a{
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out;
+    text-decoration-thickness: 1px;
+}
+
+.post-footer .related-date{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.post-footer .related a:hover {
+  box-shadow: 0 1px;
+  text-decoration: none;
+  color: #ff5722;
+  text-decoration-color: #ff5722;
+  text-decoration-thickness: 2px;
+}
+</style>

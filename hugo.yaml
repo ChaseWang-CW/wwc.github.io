@@ -1,0 +1,258 @@
+baseURL: https://example.org/
+pagination.pagerSize: 10    # 首页每页显示的文章数
+theme: PaperMod # 主题名称，和themes文件夹下的一致
+
+hasCJKLanguage: true # 自动检测是否包含中文日文韩文,如果文章中使用了很多中文引号的话可以开启
+enableInlineShortcodes: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
+
+
+minify:
+  disableXML: true # true 将禁用 XML 站点地图的生成。如果你不需要 XML 站点地图,这可以减少构建时间
+  minifyOutput: true # true 会压缩 HTML、CSS 和 JavaScript 文件,从而减小页面的文件大小,提高页面加载速度
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  keywords: [
+      keywords1,
+      keywords2,
+      keywords3,
+    ] # 首页的关键词
+  displayFullLangName: true
+  label: # 左上角图标
+    icon: "img/favicon.gif" # 图片路径：/static/img
+    iconHeight: 35
+
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2006-01-02" # 将时间格式修改为国内常用格式
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowReadingTime: true # 阅读文章时间
+  ShowShareButtons: false # 文章底部的分享按钮
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true # 显示面包屑导航
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true # 文章评论
+  hidemeta: false
+  hideSummary: true # 隐藏文章摘要
+  showtoc: true # 显示文章目录
+  tocopen: true # 默认打开文章目录
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "img/favicon.gif" # 图片路径：/static/img 
+    favicon16x16: "img/favicon.gif"
+    favicon32x32: "img/favicon.gif"
+    apple_touch_icon: "img/favicon.gif"
+    safari_pinned_tab: "img/favicon.gif"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    # noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true # 猜测语法，这个功能建议设置为 true, 如果你没有设置要显示的语言则会自动匹配
+    lineNos: true # 是否显示行号
+    style: monokai
+
+# 多语言配置
+defaultContentLanguage: en # 默认语言为英文
+defaultContentLanguageInSubdir: false # 默认语言也使用子目录（如 /en/）
+languages:
+  en: # 英文语言配置
+    title: Wangzi's blog
+    description: "I sincerely document this because life is worth it."
+    weight: 1
+    languageCode: en-us
+    languageName: "English"
+    params:
+      author: CW # 文章中默认显示的作者名字
+      showRelatedContent: true
+      social: true
+      # 首页博主简介
+      profileMode:
+        enabled: true
+        title: "Chase Wang"
+        subtitle: "I sincerely document this because life is worth it."
+        imageUrl: "avatar.png" # 图片需要放到static文件夹下
+        imageWidth: 100
+        imageHeight: 100
+        imageTitle: "Welcome to my blog"
+        buttons:
+          - name: Posts
+            url: posts
+          - name: Archives
+            url: archives
+          - name: Links
+            url: friends
+          - name: Please have a coffee
+            url: donate
+      # 社交平台小图标，参考：https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
+      socialIcons:
+        - name: github
+          url: "https://github.com/ChaseWang-CW/"
+        - name: email
+          url: "mailto:donghai.gong@outlook.com"
+        - name: rss
+          url: /index.xml/
+        - name: bilibili
+          url: "https://space.bilibili.com/14020906"
+        - name: x
+          url: "https://x.com"
+    # 菜单顺序（英文）
+    # Search，Posts，Categories，Archives，Tags，About，Links，RSS
+    # weight 是权重的意思，从 1~8 表示右上角菜单按钮的顺序（从左往右）
+    menu:
+      main:
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 1
+        - identifier: posts
+          name: Posts
+          url: /posts/
+          weight: 2
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 3
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 4
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 5
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 6
+        - identifier: friends
+          name: Links
+          url: /friends/
+          weight: 7
+        - identifier: rss
+          name: RSS
+          url: index.xml
+          weight: 8
+
+
+  zh: # 中文语言配置
+    title: 望子的博客
+    description: "我真诚地记录着，因为生活值得"
+    weight: 2
+    languageCode: zh-cn
+    languageName: "简体中文"
+    params:
+      author: 望子 # 文章中默认显示的作者名字
+      showRelatedContent: true
+      social: true
+      # 首页博主简介
+      profileMode:
+        enabled: true
+        title: "望子"
+        subtitle: "我真诚地记录着，因为生活值得。"
+        imageUrl: "avatar.png" # 图片需要放到static文件夹下
+        imageWidth: 100
+        imageHeight: 100
+        imageTitle: "欢迎来到望子的博客"
+        buttons:
+          - name: 文章
+            url: posts
+          - name: 归档
+            url: archives
+          - name: 友链
+            url: friends
+          - name: 喝咖啡
+            url: donate
+      # 社交平台小图标，参考：https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
+      socialIcons:
+        - name: github
+          url: "https://github.com/ChaseWang-CW/"
+        - name: email
+          url: "mailto:wwcya98@outlook.com"
+        - name: rss
+          url: /index.xml/
+        - name: bilibili
+          url: "https://space.bilibili.com/14020906"
+        - name: x
+          url: "https://x.com"
+    # 菜单顺序（中文）
+    # 搜索，文章，分类，归档，标签，关于，友情链接，RSS
+    menu:
+      main:
+        - identifier: search
+          name: 搜索
+          url: /search/
+          weight: 1
+        - identifier: posts
+          name: 文章
+          url: /posts/
+          weight: 2
+        - identifier: categories
+          name: 分类
+          url: /categories/
+          weight: 3
+        - identifier: archives
+          name: 归档
+          url: /archives/
+          weight: 4
+        - identifier: tags
+          name: 标签
+          url: /tags/
+          weight: 5
+        - identifier: about
+          name: 关于
+          url: /about/
+          weight: 6
+        - identifier: friends
+          name: 友情链接
+          url: /friends/
+          weight: 7
+        - identifier: rss
+          name: RSS
+          url: index.xml
+          weight: 8
+        
+
+# ----- [Begin]. 搜索配置 -----
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+# ----- [End]. 搜索配置 -----
+
