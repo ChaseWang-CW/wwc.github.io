@@ -1,12 +1,8 @@
 ---
 title: '减肥-90Day' # 当前文章标题
-description: ''  # 当前文章副标题
 date: '2025-05-06T11:01:38+08:00' # 创建日期
 categories: ["reduce weight"]
 tags: ["다이어트"]
-showToc: true # 显示目录
-TocOpen: true # 自动展开目录
-enableCopyright: true # 显示版权信息
 
 # 90天科学减肥计划 | 健康蜕变之旅
 
@@ -39,8 +35,6 @@ enableCopyright: true # 显示版权信息
 - 周一/四：燃脂操+核心训练  
 - 周三/六：游泳/骑行+拉伸  
 - 周日：瑜伽恢复日  
-
-![运动示意图](https://picx.zhimg.com/80/v2-4b9132a6487b36e0073ea9cfe54d28eb_.jpeg)
 
 ## ⚠️ 重要提示
 1. 每周允许1次"欺骗餐"  
