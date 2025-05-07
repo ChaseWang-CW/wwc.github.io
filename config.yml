@@ -113,7 +113,7 @@ languages:
         inputPosition: "bottom"
         lightTheme: "light"
         darkTheme: "dark"
-        lang: "en"
+        lang: "zh-CN"
         loading: "lazy"
         crossorigin: "anonymous"
         discussionTitle: "Welcome to the comments section."
