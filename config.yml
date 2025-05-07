@@ -114,9 +114,9 @@ languages:
         lightTheme: "light"
         darkTheme: "dark"
         lang: "en-us"
-        crossorigin="anonymous"
-        discussionTitle: "Welcome to the comments section." # 按需填写，评论框上方的标题
-        discussionSubtitle: "Thank you for your patience in reading! Come pick an emoji or leave a comment!" # 按需填写，评论框上方的副标题
+        crossorigin: "anonymous"
+        discussionTitle: "Welcome to the comments section."
+        discussionSubtitle: "Thank you for your patience in reading! Come pick an emoji or leave a comment!"
       # 首页博主简介
       profileMode:
         enabled: true
