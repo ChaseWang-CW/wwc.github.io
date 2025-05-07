@@ -101,6 +101,22 @@ languages:
       author: CW # 文章中默认显示的作者名字
       showRelatedContent: true
       social: true
+      giscus:
+         repo: "ChaseWang-CW/wwc.github.io"
+         repoId: "R_kgDOOhcNhg"
+         category: "Announcements"
+         categoryId: "DIC_kwDOOhcNhs4Cp3E8"
+         mapping: "pathname"
+         strict: "0"
+         reactionsEnabled: "1"
+         emitMetadata: "0"
+         inputPosition: "bottom"
+         lightTheme: "light"
+         darkTheme: "dark"
+         lang: "en-us"
+         crossorigin="anonymous"
+         discussionTitle: "Welcome to the comments section." # 按需填写，评论框上方的标题
+         discussionSubtitle: "Thank you for your patience in reading! Come pick an emoji or leave a comment!" # 按需填写，评论框上方的副标题
       # 首页博主简介
       profileMode:
         enabled: true
