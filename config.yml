@@ -124,18 +124,14 @@ languages:
         title: "Chase Wang"
         subtitle: "I sincerely document this because life is worth it."
         imageUrl: "avatar.png" # 图片需要放到static文件夹下
-        imageWidth: 100
-        imageHeight: 100
+        imageWidth: 123
+        imageHeight: 125
         imageTitle: "Welcome to my blog"
         buttons:
           - name: Posts
             url: posts
           - name: Archives
             url: archives
-          - name: Links
-            url: friends
-          - name: Please have a coffee
-            url: donate
       # 社交平台小图标，参考：https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
       socialIcons:
         - name: github
@@ -203,8 +199,8 @@ languages:
         title: "望子"
         subtitle: "我真诚地记录着，因为生活值得。"
         imageUrl: "avatar.png" # 图片需要放到static文件夹下
-        imageWidth: 100
-        imageHeight: 100
+        imageWidth: 125
+        imageHeight: 125
         imageTitle: "欢迎来到望子的博客"
         buttons:
           - name: 文章
