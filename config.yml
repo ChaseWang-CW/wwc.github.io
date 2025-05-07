@@ -54,10 +54,10 @@ params:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "img/favicon.gif" # 图片路径：/static/img 
-    favicon16x16: "img/favicon.gif"
-    favicon32x32: "img/favicon.gif"
-    apple_touch_icon: "img/favicon.gif"
-    safari_pinned_tab: "img/favicon.gif"
+    favicon16x16: "img/favicon.ico"
+    favicon32x32: "img/favicon.ico"
+    apple_touch_icon: "img/favicon.ico"
+    safari_pinned_tab: "img/favicon.ico"
 
   cover:
     hidden: true # hide everywhere but not in structured data
